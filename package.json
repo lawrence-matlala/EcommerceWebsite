@@ -2,7 +2,7 @@
   "name": "ecommerce_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lawrence-matlala.github.io/firstEcommerce",
+  "homepage": "https://lawrence-matlala.github.io/EcommerceWebsite",
   "dependencies": {
     "@auth0/auth0-react": "^2.4.0",
     "@testing-library/dom": "^10.4.1",
