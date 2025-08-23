@@ -1,0 +1,3 @@
+stk =[]
+
+print(stk)

@@ -1,0 +1,45 @@
+const Homeproduct =
+[
+    {
+        id:1,
+        Name:'product1',
+        price:'26',
+        img:'/image/Laptop1.png',
+        cat:'',
+        type:'new',
+    },
+    {
+        id:2,
+        Name:'product2',
+        price:'96',
+        img:'/image/Laptop2.png',
+        cat:'',
+        type:'new',
+    },
+    {
+        id:3,
+        Name:'product3',
+        price:'26',
+        img:'/image/watchMen1.png',
+        cat:'',
+        type:'new',
+    },
+    {
+        id:5,
+        Name:'product4',
+        price:'26',
+        img:'/image/watchWomen1.png',
+        cat:'',
+        type:'new',
+    },
+    {
+        id:6,
+        Name:'product5',
+        price:'26',
+        img:'/image/watchMen2.png',
+        cat:'',
+        type:'new',
+    }
+]
+
+export default Homeproduct;
