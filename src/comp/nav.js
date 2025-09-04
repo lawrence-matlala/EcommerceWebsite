@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 
 
 
-const Nav = ()=>{
+const Nav = ({search, setSearch,searchproduct})=>{
       const {loginWithRedirect, logout, user, isAuthenticated} = useAuth0();
     return(
         <>
@@ -28,14 +28,14 @@ const Nav = ()=>{
             <div className='mid_header'>
                 {/*adding a logo*/}
                 <div className='logo'>
-                    <img src='image/logo.webp' alt='logo'></img>
+                    <img src={process.env.PUBLIC_URL +'/image/logo.webp'} alt='logo'></img>
                 </div>
                 {/*End*/}
 
                 {/*Adding search bars*/}
                 <div className='search_box'>
-                   <input type='text' value='' placeholder='Search'></input>
-                   <button>
+                   <input type='text' value={search} placeholder='Search' onChange={(e) => setSearch(e.target.value)}></input>
+                   <button onClick={searchproduct}>
                      <AiOutlineSearch />
                   </button>
                 </div>
@@ -100,7 +100,7 @@ const Nav = ()=>{
                      <ul>
                         <li><Link to ='/' className='link'>Home</Link></li>
                         <li><Link to ='/shop' className='link'>Shop</Link></li>
-                        <li><Link to ='/collection' className='link'>Collection</Link></li>
+                        <li><Link to ='/cart' className='link'>Cart</Link></li>
                         <li><Link to ='/about' className='link'>About</Link></li>
                         <li><Link to ='/contact' className='link'>Contact</Link></li>
                      </ul>
